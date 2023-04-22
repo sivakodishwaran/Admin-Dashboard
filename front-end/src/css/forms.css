@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+body{
+    background-image: linear-gradient(to right, #ccd9e5 ,#87beef );
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+  
+    font-weight: bold;
+    animation-duration: 3Ss;
+    animation-name: slide-in;
+    animation-iteration-count:infinite;
+}
+@keyframes slide-in{
+    0%{
+        margin-right: 50%;
+        width: 200%;
+    }
+    
+        
+    100%{
+        margin-left: 0%;
+        width: 100%;
+    }
+    }
+
+.responsive_container{
+    width: 900px;
+    max-width:100%;
+    min-height:400px;
+    margin:0 auto;
+    display:flex;
+    flex-direction: inline;
+    background-color: rgb(255, 254, 253);
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 10px rgb(88 140 187);
+}
+img{
+    height: auto;
+    width:40%;
+}
+form{
+    
+    width:60%;
+    margin-right:50px;
+    margin-left: 50px;
+    
+}
+.group{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+
+label{
+    margin-top:10px ;
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+select{
+    padding: 10px;
+    border-radius: 10px;
+    outline-color:black ;
+    
+}
+input{
+    padding:10px;
+    border-radius: 10px;
+    
+    outline-color:rgb(216, 220, 221) ;
+
+}
+input:focus{
+    
+    outline-color:black ;
+}
+.btn{
+    padding: 10px;
+    border-radius:10px;
+    margin-top:25px ;
+    border: none;
+    background-color: rgb(113 174 229);
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    cursor:pointer;
+    
+}
+.btn:hover{
+    background-color:rgb(172, 201, 226);
+    transition: 0.8s;
+    color: white;
+}
